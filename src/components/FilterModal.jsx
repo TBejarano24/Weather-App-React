@@ -35,19 +35,11 @@ export default function FilterModal({
         onClick={handleClose}
         className="w-[90%] flex justify-end items-end hover:cursor-pointer"
       >
-        <img
-          className="w-[30px]"
-          src="Weather-App-React/close.svg"
-          alt="close icon"
-        />
+        <img className="w-[30px]" src="/close.svg" alt="close icon" />
       </button>
       <nav className="flex justify-around items-center">
         <div className="border-4 border-[#6e707a] flex w-[55%]">
-          <img
-            className="w-[30px] mx-1"
-            src="Weather-App-React/search.svg"
-            alt="search icon"
-          />
+          <img className="w-[30px] mx-1" src="/search.svg" alt="search icon" />
           <input
             onChange={handleInput}
             className="w-full h-[40px] text-[#e7e7e7] placeholder:text-[#6e707a] text-[20px] outline-none"
