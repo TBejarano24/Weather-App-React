@@ -8,8 +8,6 @@ export default function App() {
   const [currentWeatherData, setCurrentWeatherData] = useState([]);
   const [units, setUnits] = useState("metric");
 
-  console.log(currentWeatherData);
-
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr]">

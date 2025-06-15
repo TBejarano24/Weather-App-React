@@ -1,6 +1,4 @@
 export default function ForecastCard({ info, order, units }) {
-  // console.log(info);
-
   const currentDate = new Date(info?.dt * 1000);
   const arrayDate = currentDate.toString().split(" ");
   const formattedDate = `${arrayDate[0]}, ${arrayDate[2]} ${arrayDate[1]}`;

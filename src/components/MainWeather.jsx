@@ -37,7 +37,6 @@ export default function MainWeather({ setCurrentWeatherData, units }) {
   }
 
   setCurrentWeatherData(weatherData);
-  console.log(location);
 
   return (
     <div className="bg-[#1e213a] grid grid-cols-1 justify-items-center md:grid-rows-[50px_200px_0.3fr_70px_0.1fr_200px] relative">

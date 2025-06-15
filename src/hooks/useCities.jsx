@@ -29,7 +29,5 @@ export default function useCities(input) {
     fetchCities();
   }, [input]);
 
-  console.log(cities, input);
-
   return { cities, loading, error };
 }

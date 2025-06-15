@@ -10,8 +10,6 @@ export default function Forecast({ coordinates, units }) {
 
   let dayId = 0;
 
-  // console.log(foreCastData);
-
   const fiveDayForecast = foreCastData?.list?.filter((item) =>
     item.dt_txt.includes("12:00:00")
   );
