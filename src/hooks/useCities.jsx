@@ -11,7 +11,9 @@ export default function useCities(input) {
       setLoading(true);
       setError("");
       try {
-        const response = await axios.get("/static_Json/cities.json");
+        const response = await axios.get(
+          `${import.meta.env.BASE_URL}static_Json/cities.json`
+        );
         setCities(
           response.data.filter((city) => {
             return city.name.toLowerCase().includes(input.toLowerCase());
@@ -27,7 +29,7 @@ export default function useCities(input) {
     fetchCities();
   }, [input]);
 
-  console.log(cities, location);
+  console.log(cities, input);
 
   return { cities, loading, error };
 }

@@ -12,7 +12,9 @@ export default function ForecastCard({ info, order, units }) {
       </span>
       <img
         className="w-[50px]"
-        src={`/weather/${info?.weather?.[0]?.icon}.png`}
+        src={`${import.meta.env.BASE_URL}/weather/${
+          info?.weather?.[0]?.icon
+        }.png`}
         alt="weather-forecast-icon"
       />
       <div className="flex gap-2 items-center">
