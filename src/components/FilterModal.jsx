@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useCities from "../hooks/useCities";
-import CitySuggestion from ".Weather-App-React/CitySuggestion";
+import CitySuggestion from "./Weather-App-React/CitySuggestion";
 
 export default function FilterModal({
   state,
