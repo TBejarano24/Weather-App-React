@@ -25,7 +25,7 @@ export default function Highlights({ currentWeatherData, units }) {
             <img
               style={{ rotate: `${currentWeatherData?.wind?.deg}deg` }}
               className="w-[40px] bg-[#626475] rounded-full p-2"
-              src="/navigation.svg"
+              src="Weather-App-React/navigation.svg"
               alt="compass icon"
             />
             <span className="text-[#e7e7eb]">
