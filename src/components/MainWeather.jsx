@@ -50,7 +50,7 @@ export default function MainWeather({ setCurrentWeatherData, units }) {
         <button className="bg-[#6e707a] rounded-full p-2 hover:cursor-pointer hover:bg-[#47484e]">
           <img
             className="w-[20px] h-[20px]"
-            src={`${import.meta.env.BASE_URL}/location.svg`}
+            src={`/location.svg`}
             alt="geolocation icon"
           />
         </button>
@@ -58,9 +58,7 @@ export default function MainWeather({ setCurrentWeatherData, units }) {
       <div className="bg-[url(/others/Cloud-background.png)] w-full h-[200px] bg-center bg-cover flex justify-center items-center opacity-30"></div>
       <img
         className="w-[100px] h-[100px] absolute top-[90px] mx-auto inset-0"
-        src={`${import.meta.env.BASE_URL}/weather/${
-          weatherData?.weather?.[0].icon
-        }.png`}
+        src={`/weather/${weatherData?.weather?.[0].icon}.png`}
         alt="current_weather_icon"
       />
       <div className="flex items-center">
@@ -80,7 +78,7 @@ export default function MainWeather({ setCurrentWeatherData, units }) {
       <div className="flex justify-center items-center gap-2 my-[20px] self-start">
         <img
           className="w-[20px]"
-          src={`${import.meta.env.BASE_URL}/location_on.svg`}
+          src={`/location_on.svg`}
           alt="location icon"
         />
         <span className="text-[14px] text-[#bebebead]">
